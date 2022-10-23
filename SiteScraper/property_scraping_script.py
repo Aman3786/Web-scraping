@@ -1,3 +1,5 @@
+# This code is used to scrap the mesure information of propertyfinder website using selenium
+
 import requests
 from bs4 import BeautifulSoup as soup
 import csv
@@ -11,7 +13,6 @@ link = input('Enter link : ')
 
 driver = webdriver.Chrome(executable_path=chrome_path)
 
-# https://www.propertyfinder.ae/en/search?c=1&l=73&ob=pa&page=79&t=1
 driver.get(link)
 file = 'data.csv'
 pages = True
